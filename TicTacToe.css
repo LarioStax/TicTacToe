@@ -1,0 +1,68 @@
+body {
+	text-align: center;
+	background-color: rgb(180,180,180);
+	color: rgb(50,50,50);
+}
+
+#gameContainer {
+	margin: auto;
+	width: 30vw;
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+}
+
+.display {
+	margin: 5px;
+	display: inline-block;
+}
+
+.score {
+	margin: 20px;
+
+}
+
+.invisible {
+	visibility: hidden;
+}
+
+.box {
+	width: 30%;
+	padding-top: 30%;
+	margin: 1.6666%;
+	background-color: grey;
+	text-align: center;
+	align-content: center;
+}
+
+.whiteBox {
+	background-color: white;
+}
+
+.blink {
+	animation-name: blink;
+	animation-duration: 0.3s;
+	animation-iteration-count: 10;
+}
+
+
+@keyframes blink {
+	0% {
+		background-color: blue;
+	}
+	50% {
+		background-color: red;
+	}
+}
+
+@media (max-width: 1000px) {
+	#gameContainer {
+		width: 60vw;
+	}
+}
+
+@media (max-width: 500px) {
+	#gameContainer {
+		width: 80vw;
+	}
+}
